@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "zabmantle",
+  "author": "greenn.lab@gmail.com",
+  "scripts": {
+    "dev": "npx slidev slides.md --remote",
+    "build": "npx slidev build"
+  },
+  "dependencies": {
+    "@slidev/types": "^0.37.1"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^0.37.0",
+    "sass": "^1.56.1",
+    "vue": "^3.2.45"
+  }
+}

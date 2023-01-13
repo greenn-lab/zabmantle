@@ -131,7 +131,39 @@ jacocoTestCoverageVerification {
 
 ---
 # 5 Page
-layout: 'centre'
+layout: 'default'
+---
+# target
+꼬멘틀 이라고 하는 단어 맞추기 게임
+
+## 살펴보기
+1. 단어 입력하면 어떻게 될까?
+2. 단어 전송 이후에 결과값은 어떨까? 
+
+<div class="image03"></div>
+
+
+---
+# 6 Page
+layout: 'default'
+---
+# 개발자도구 활용하기
+`Network`탭에서 보면,  
+
+<div class="image04"></div>
+
+
+---
+# 7 Page
+layout: 'default'
+---
+# 개발자도구 활용하기
+`Source`탭에서 보면,  
+
+<div class="image05"></div>
+
+---
+# 7 Page
 ---
 # [Spring Initializr](https://start.spring.io/)
 

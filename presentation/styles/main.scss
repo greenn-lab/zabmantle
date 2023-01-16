@@ -17,10 +17,12 @@
     @apply select-text;
   }
 
-  code {
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: .25rem;
+  :not(pre) > code {
+    border: 1px solid var(--cm-operator);
+    font-weight: inherit;
+    margin-right: .25rem;
     padding: 0 .25rem;
+    text-transform: none;
   }
 
   h1 {
@@ -68,7 +70,19 @@
   }
 
   blockquote {
-    @apply text-sm px-2 py-1 bg-$prism-background border-primary border-left rounded;
+    @apply text-sm my-5 p-5 border-primary border-left;
+    border-left: 2px solid #1c6b48;
+    position: relative;
+
+    &::before {
+      content: "🍓";
+      background-color: #fff;
+      font-size: 1.5em;
+      left: -1em;
+      padding: 0.5em;
+      position: absolute;
+      top: 10px;
+    }
   }
 
   blockquote > * {
@@ -165,9 +179,18 @@
     .footnote-backref {
       display: none;
     }
+
     a {
       border-style: none;
       color: #aaa;
     }
   }
+}
+
+.slidev-code-wrapper {
+  width: fit-content;
+}
+
+:not(pre) > code:before, :not(pre) > code:after {
+  content: none;
 }

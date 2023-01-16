@@ -7,7 +7,10 @@
     "build": "npx slidev build"
   },
   "dependencies": {
-    "@slidev/types": "^0.37.1"
+    "@slidev/types": "^0.37.1",
+    "codemirror-theme-vars": "^0.1.1",
+    "prism-theme-vars": "^0.2.4",
+    "theme-vitesse": "^0.6.0"
   },
   "devDependencies": {
     "@slidev/cli": "^0.37.0",

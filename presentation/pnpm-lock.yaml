@@ -3,11 +3,17 @@ lockfileVersion: 5.4
 specifiers:
   '@slidev/cli': ^0.37.0
   '@slidev/types': ^0.37.1
+  codemirror-theme-vars: ^0.1.1
+  prism-theme-vars: ^0.2.4
   sass: ^1.56.1
+  theme-vitesse: ^0.6.0
   vue: ^3.2.45
 
 dependencies:
   '@slidev/types': 0.37.1
+  codemirror-theme-vars: 0.1.1
+  prism-theme-vars: 0.2.4
+  theme-vitesse: 0.6.0
 
 devDependencies:
   '@slidev/cli': 0.37.1_sass@1.56.1
@@ -1237,6 +1243,10 @@ packages:
       strip-ansi: 6.0.1
       wrap-ansi: 7.0.0
     dev: true
+
+  /codemirror-theme-vars/0.1.1:
+    resolution: {integrity: sha512-Au0Ysn6tUMZB/1Jd5S8g4Or1kZxTuTnNx6MVs9H46Ad7w8IEjkHusH+4oyia/FBcVuAJO4DIlkDnPM8Qnnf1rg==}
+    dev: false
 
   /codemirror/5.65.10:
     resolution: {integrity: sha512-IXAG5wlhbgcTJ6rZZcmi4+sjWIbJqIGfeg3tNa3yX84Jb3T4huS5qzQAo/cUisc1l3bI47WZodpyf7cYcocDKg==}
@@ -3089,6 +3099,10 @@ packages:
     hasBin: true
     dev: true
 
+  /prism-theme-vars/0.2.4:
+    resolution: {integrity: sha512-B3Pht+GCT87sZph7hMRLlCQXzCM0awW7Rhk08RavpqRW4LEQOeqN0uMG4QCWkul2tr8PB61YAOJGUrEW+1uuJA==}
+    dev: false
+
   /prismjs/1.29.0:
     resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
     engines: {node: '>=6'}
@@ -3413,6 +3427,11 @@ packages:
       yallist: 3.1.1
     dev: true
     optional: true
+
+  /theme-vitesse/0.6.0:
+    resolution: {integrity: sha512-/XEZFGXLTK/AlWSe9t+NIXB1tP3yqdzugcSJJ2Fg0KYM1PcoL/zWs5AuaEcCFt1pfi/9Og++tzOdiU2aKf/+Xw==}
+    engines: {vscode: ^1.43.0}
+    dev: false
 
   /to-fast-properties/2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}

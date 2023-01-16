@@ -11,10 +11,8 @@ fonts:
   mono: 'JetBrains Mono'
 defaults:
   layout: 'centre'
-drawings: 
-  enabled: false
 
-# 0 Page
+# 1 Page
 layout: 'cover'
 ---
 # ~~풀스택~~ 둘스택 짭맨틀
@@ -22,9 +20,9 @@ layout: 'cover'
 
 
 ---
-# 1 Page
+# 2 Page
 layout: 'image-right'
-image: 'https://source.unsplash.com/collection/94734566/1920x1080'
+image: 'https://source.unsplash.com/user/greennlab/likes'
 ---
 # .editorconfig
 일관된 코드 작성 규칙을 정의해요.
@@ -53,9 +51,9 @@ trim_trailing_whitespace = false
 ```
 
 ---
-# 2 Page
+# 3 Page
 layout: 'image-right'
-image: 'https://source.unsplash.com/collection/94734566/1920x1080'
+image: 'https://source.unsplash.com/user/greennlab/likes'
 ---
 # build.gradle
 테스트 커버리지를 위해서 `jacoco`를 설정해요.
@@ -74,9 +72,9 @@ tasks.named('test') {
 ```
 
 ---
-# 3 Page
-layout: 'image-right'
-image: 'https://source.unsplash.com/collection/94734566/1920x1080'
+# 4 Page
+layout: 'image-small-right'
+image: 'https://source.unsplash.com/user/greennlab/likes'
 ---
 # build.gradle
 `jacoco` 실행 결과를 리포팅하는 설정이에요.
@@ -104,10 +102,11 @@ jacocoTestReport {
 <img class="image02">
 </v-click>
 
+
 ---
-# 4 Page
+# 5 Page
 layout: 'image-right'
-image: 'https://source.unsplash.com/collection/94734566/1920x1080'
+image: 'https://source.unsplash.com/user/greennlab/likes'
 ---
 # build.gradle
 테스트 커버리지를 측정하는 규칙을 정의해요.
@@ -129,8 +128,9 @@ jacocoTestCoverageVerification {
 }
 ```
 
+
 ---
-# 5 Page
+# 6 Page
 layout: 'default'
 ---
 # target
@@ -144,7 +144,7 @@ layout: 'default'
 
 
 ---
-# 6 Page
+# 7 Page
 layout: 'default'
 ---
 # 개발자도구 활용하기
@@ -154,7 +154,7 @@ layout: 'default'
 
 
 ---
-# 7 Page
+# 8 Page
 layout: 'default'
 ---
 # 개발자도구 활용하기
@@ -162,14 +162,56 @@ layout: 'default'
 
 <div class="image05"></div>
 
+
 ---
-# 7 Page
+# 9 Page
 ---
 # [Spring Initializr](https://start.spring.io/)
 
 <br><br>
 
 추가할 dependencies 는,
-### `Spring Reactive Web`
-### `lombok`
+### 🌱`Spring Reactive Web`
+### 🌶`lombok️`
 
+
+---
+# 10 Page
+layout: 'default'
+---
+# Servlet Container
+## 기본은 *Netty*
+
+> 팀장님께서 *Undertow*로 바꿔보자고 하셔서....
+
+
+**`build.gradle`**
+```groovy{2}
+dependencies {
+  implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+  // ...
+}
+```
+
+
+---
+# 11 Page
+layout: 'default'
+---
+# Servlet Container
+## *Undertow*로 바꾸기
+```groovy{2-5}
+dependencies {
+	implementation ('org.springframework.boot:spring-boot-starter-webflux') {
+    exclude group: 'org.springframework.boot', module: 'spring-boot-starter-netty'
+  }
+  implementation 'org.springframework.boot:spring-boot-starter-undertow'
+
+  // ...
+}
+```
+
+> 성능에 대해서는 "초콜렛 vs 바닐라" 같은 식이라서 비교 불가하다고 하네요.  
+> 하지만, `Undertow`는 Servlet Spec 을 준수하는데 초점이 맞춰져 있고, `Netty`를 엔진으로 쓰고 있다고 해요.  
+> ~~Netty를 만든게 한국인이라서 더 좋음~~

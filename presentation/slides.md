@@ -165,6 +165,7 @@ layout: 'default'
 
 ---
 # 9 Page
+layout: 'default'
 ---
 # [Spring Initializr](https://start.spring.io/)
 
@@ -177,6 +178,16 @@ layout: 'default'
 
 ---
 # 10 Page
+layout: 'default'
+---
+# git branch 전략
+<iframe width="100%" height="90%" src="https://www.youtube.com/embed/Lp9q2saJMDk" title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+---
+# 11 Page
 layout: 'default'
 ---
 # Servlet Container
@@ -196,7 +207,7 @@ dependencies {
 
 
 ---
-# 11 Page
+# 12 Page
 layout: 'default'
 ---
 # Servlet Container
@@ -212,6 +223,6 @@ dependencies {
 }
 ```
 
-> 성능에 대해서는 "초콜렛 vs 바닐라" 같은 식이라서 비교 불가하다고 하네요.  
+> 기본 내장된 `Netty` 와 성능에 대한 비교는 "초콜렛 vs 바닐라" 같은 식이라서 불가하다고 하네요.  
 > 하지만, `Undertow`는 Servlet Spec 을 준수하는데 초점이 맞춰져 있고, `Netty`를 엔진으로 쓰고 있다고 해요.  
 > ~~Netty를 만든게 한국인이라서 더 좋음~~

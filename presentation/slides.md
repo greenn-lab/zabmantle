@@ -181,9 +181,11 @@ layout: 'default'
 layout: 'default'
 ---
 # git branch 전략
-<iframe width="100%" height="90%" src="https://www.youtube.com/embed/Lp9q2saJMDk" title="YouTube video player" frameborder="0" 
+<iframe width="100%" height="80%" src="https://www.youtube.com/embed/Lp9q2saJMDk" title="YouTube video player" frameborder="0" 
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+[영상 속 참고 사이트](https://velog.io/@kw2577/Git-branch-%EC%A0%84%EB%9E%B5)  
+~~그리고 영상이 지루해서 1.5x 인코딩했더니 목소리가 재밌네요😢~~ 
 
 
 ---

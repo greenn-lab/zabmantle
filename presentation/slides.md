@@ -58,14 +58,13 @@ image: 'https://source.unsplash.com/user/greennlab/likes'
 # build.gradle
 테스트 커버리지를 위해서 `jacoco`를 설정해요.
 
-```groovy {3|8}
+```groovy {3|6-8}
 plugins {
     // ...
     id 'jacoco'
 }
 
-tasks.named('test') {
-    useJUnitPlatform()
+tasks.named('build') {
     finalizedBy(jacocoTestReport)
 }
 

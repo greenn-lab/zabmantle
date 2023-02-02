@@ -36,3 +36,33 @@ tasks.named('build') {
     finalizedBy(jacocoTestReport)
 }
 
+jacocoTestReport {
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, excludes: [
+                    "**/*Application.class",
+                    "**/*WebClient.class",
+                    "**/config/*"
+            ])
+        })
+        )
+    }
+
+    finalizedBy(jacocoTestCoverageVerification)
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            element = 'CLASS'
+            limit {
+                minimum = 0.99
+            }
+            excludes = [
+                    "*.*Application",
+                    "*.*WebClient",
+                    "*.config.*"
+            ]
+        }
+    }
+}

@@ -25,9 +25,9 @@ md(Markdown)작성과 고유의 몇몇 마크업으로 프로젝트를 구현 �
 - [ ] 프로젝트 설정
   - [ ] 백엔드 서비스
     - [X] Scaffolding (via. Spring Intializr)
-    - [ ] Gradle 설정
-      - [ ] jacoco
-      - [ ] undertow (Servlet Container)
+    - [X] Gradle 설정
+      - [X] jacoco
+      - [X] undertow (Servlet Container)
     - [ ] 코드 작성
     - [ ] 테스트 작성
   - [ ] 프론트엔드 서비스

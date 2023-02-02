@@ -9,6 +9,7 @@ group = 'net.timbel'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
+
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
@@ -29,5 +30,9 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
-  finalizedBy(jacocoTestReport)
 }
+
+tasks.named('build') {
+    finalizedBy(jacocoTestReport)
+}
+
